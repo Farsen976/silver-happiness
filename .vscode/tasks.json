@@ -1,0 +1,26 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "gradle",
+			"id": "/Users/farsen.abdallah/work-space/open-source/silver-happinessbuildsilver-happiness",
+			"script": "build",
+			"description": "Assembles and tests this project.",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"project": "silver-happiness",
+			"buildFile": "/Users/farsen.abdallah/work-space/open-source/silver-happiness/build.gradle",
+			"rootProject": "silver-happiness",
+			"projectFolder": "/Users/farsen.abdallah/work-space/open-source/silver-happiness",
+			"workspaceFolder": "/Users/farsen.abdallah/work-space/open-source/silver-happiness",
+			"args": "",
+			"javaDebug": false,
+			"problemMatcher": [
+				"$gradle"
+			],
+			"label": "gradle: build"
+		}
+	]
+}
