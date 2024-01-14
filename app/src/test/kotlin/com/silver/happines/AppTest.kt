@@ -25,4 +25,17 @@ class AppTest {
             assertEquals("Hello World!", bodyAsText())
         }
     }
+
+    @Test
+    fun shouldCreateUser() = testApplication {
+        application {
+            configureRouting()
+        }
+        val response = client.post("/add") { 
+            header(HttpHeaders.ContentType, ContentType.Application.FormUrlEncoded.toString())
+            setBody(listOf("username" to "Mbappe").formUrlEncode())
+
+         }
+         assertEquals("Player Mbappe stored correctly ", response.bodyAsText())
+    }
 }

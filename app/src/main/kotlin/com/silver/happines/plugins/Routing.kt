@@ -11,5 +11,11 @@ fun Application.configureRouting() {
         get("/") {
             call.respondText("Hello World!")
         }
+        post("/add") {
+            val requestBody = call.receiveParameters()
+            val value  = requestBody["username"].toString()
+            
+            call.respondText("Player ${value} stored correctly ", status = HttpStatusCode.Created)
+        }
     }
 }
