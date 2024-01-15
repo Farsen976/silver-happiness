@@ -39,6 +39,10 @@ dependencies {
     implementation("io.ktor:ktor-server-default-headers-jvm:2.3.7")
     testImplementation("io.ktor:ktor-server-tests-jvm:2.3.7")
     implementation("ch.qos.logback:logback-classic:1.4.14")
+    implementation("org.litote.kmongo:kmongo:4.11.0")
+
+    implementation("io.insert-koin:koin-ktor:2.2.2")
+    implementation("io.insert-koin:koin-core:2.2.2")
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
